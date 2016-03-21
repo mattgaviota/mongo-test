@@ -1,0 +1,40 @@
+<!doctype HTML>
+<html>
+<head>
+    <title>Editar Pelicula</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="../images/movie.png" alt="movies">
+            <h1>Películas</h1>
+        </div>
+    </header>
+    <div class="listado">
+        <img src="../images/delete.png" alt="delete"/>
+        <h2>Eliminar</h2>
+    </div>
+    <div class="form">
+        <form action="/delete_movie" method="POST">
+            <div class="fila">
+               <label for="title">Título</label>
+               <input type="text" readonly="readonly" disabled="disabled" id="title" name="title" value="{{movie.title}}"/>
+            </div>
+            <div class="fila">
+                <label for="year">Año</label>
+                <input type="text" readonly="readonly" disabled="disabled" id="year" name="year" value="{{movie.year}}"/>
+            </div>
+            <div class="fila">
+               <label for="imdb">Id de Imdb</label>
+               <input type="text" readonly="readonly" disabled="disabled" id="imdb" name="imdb" value="{{movie.imdb}}"/>
+            </div>
+            <input type="hidden" name="id" id="id" value="{{movie._id}}">
+            <div class="controles">
+                <input type="submit" value="Eliminar"/>
+                <a href="/">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+a {
+    text-decoration: none;
+}
+body {
+    font-family: 'helvetica';
+    font-size: 1em;
+}
+h1{
+    display: inline-block;
+    vertical-align: middle;
+}
+h2 {
+    display: inline-block;
+    vertical-align: middle;
+}
+header {
+    background-color: #000000;
+    color: #ffffff;
+    height: 75px;
+}
+img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    margin-left: 5px;
+    width: auto;
+}
+table {
+    padding: 5px;
+}
+table th {
+    background: #000000;
+    color: #ffffff;
+}
+
+table tr:nth-child(2n+1) {
+    background: rgba(255, 255, 255, 0.5);
+}
+table tr:nth-child(2n+1) {
+    background: #ffffff;
+}
+.header {
+    height: 48px;
+    margin-bottom: 20px;
+}
+.listado {
+    height: 32px;
+    margin-bottom: 50px;
+}
+.operaciones {
+    height: 26px;
+    padding: 2px;
+    width: 60px;
+}
+.operaciones .editar {
+    display: inline-block;
+    background-image: url('../images/editar.png');
+    background-repeat: no-repeat;
+    background-size: 26px;
+    height: 100%;
+    width: 45%;
+}
+.operaciones .eliminar {
+    display: inline-block;
+    background-image: url('../images/delete.png');
+    background-repeat: no-repeat;
+    background-size: 26px;
+    height: 100%;
+    width: 45%;
+}
+.tools {
+    display: inline-block;
+    background-image: url('../images/tools.png');
+    height: 26px;
+    width: 26px;
+    margin: 2px;
+}
+.button {
+    padding: 15px;
+}
+.button a{
+    height: 26px;
+    padding-left: 30px;
+}
+.add {
+    display: inline-block;
+    background-image: url('../images/add.png');
+    background-repeat: no-repeat;
+    background-size: 26px;
+    color: #000000;
+    font-weight: bold;
+}
+/*Forms*/
+.form {
+    width: 25%;
+}
+.fila {
+    padding: 10px;
+}
+.fila label{
+    color: #000000;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: bold;
+    width: 13%;
+}
+.fila input{
+    background-color: #ffffff;
+    border: 0.5px solid #000000;
+    color: #000000;
+    display: inline-block;
+    width: 85%;
+}
+.fila input:disabled {
+    background-color: #000000;
+    color: #ffffff;
+}
+.controles {
+    text-align: right;
+    margin-right: 10px;
+}
+.controles input {
+    background-color: #000000;
+    background-image: url('../images/ok.png');
+    background-repeat: no-repeat;
+    background-size: 26px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    height: 32px;
+    width: 100px;
+}
+.controles a {
+    background-color: #000000;
+    background-image: url('../images/cancel.png');
+    background-repeat: no-repeat;
+    background-size: 26px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 4px 5px 5px 25px;
+}
